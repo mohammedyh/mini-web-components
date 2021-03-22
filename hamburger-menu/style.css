@@ -1,0 +1,83 @@
+*::before, *::after, * {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html { box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 22%);
+  font-size: 1.8rem;
+  transition: color 500ms;
+}
+
+a:hover {
+  color: white;
+}
+
+.icon-container {
+  display: inline-block;
+  height: 45px;
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background-color: #191919;
+  position: relative;
+}
+
+.hamburger::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 40px;
+  height: 4px;
+  background-color: inherit;
+}
+
+.hamburger::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  width: 40px;
+  height: 4px;
+  background-color: inherit;
+}
+
+.menu {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  padding: 4rem 8rem 0 2rem;
+  background-color: #191919;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 0 1rem 2rem;
+}
+
+.active {
+  right: 0px;
+}
+
+.active-icon {
+  background-color: white;
+}
