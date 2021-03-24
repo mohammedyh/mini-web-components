@@ -1,21 +1,21 @@
 *::before, *::after, * {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 html { box-sizing: border-box; }
 
 a {
   text-decoration: none;
-  color: hsl(0, 0%, 22%);
+  color: hsl(0, 0%, 60%);
   font-size: 1.8rem;
   transition: color 500ms;
 }
 
-a:hover {
-  color: white;
-}
+a:hover { color: white; }
+
+body { font-family: 'Inter', sans-serif }
 
 .icon-container {
   display: inline-block;
@@ -35,23 +35,17 @@ a:hover {
   position: relative;
 }
 
-.hamburger::before {
+.hamburger::before,
+.hamburger::after {
   content: '';
   position: absolute;
-  top: 12px;
   width: 40px;
   height: 4px;
   background-color: inherit;
 }
 
-.hamburger::after {
-  content: '';
-  position: absolute;
-  top: 24px;
-  width: 40px;
-  height: 4px;
-  background-color: inherit;
-}
+.hamburger::before { top: 12px; }
+.hamburger::after { top: 24px; }
 
 .menu {
   height: 100%;
@@ -70,14 +64,6 @@ a:hover {
   list-style: none;
 }
 
-.menu li {
-  margin: 0 0 1rem 2rem;
-}
-
-.active {
-  right: 0px;
-}
-
-.active-icon {
-  background-color: white;
-}
+.menu li { margin: 0 0 1rem 2rem; }
+.active { right: 0px; }
+.active-icon { background-color: white; }
