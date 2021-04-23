@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0eea62fa6a.js" defer crossorigin="anonymous"></script>
+  <title>Todo List</title>
+</head>
+
+<body class="container">
+  <div class="h-96 w-screen bg-blend-multiply" style="background: url('./bg-image.jpg') center center/cover no-repeat; background-color: hsl(255, 83%, 67%);"></div>
+
+  <div class="w-screen mx-auto">
+    <form class="w-full flex justify-center">
+      <input class="bg-white w-2/5 shadow-xl focus:outline-none focus:ring-2 focus:ring-gray-300 duration-150 border rounded-md px-4 py-3 -mt-7" type="text" placeholder="Create new todo">
+    </form>
+    
+    <div class="flex justify-center">
+      <ul class="mt-10"></ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
