@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  place-content: center;
+  margin: 0 1.5em;
+  height: 100vh;
+  font-family: 'Lexend', sans-serif;
+  background: papayawhip;
+}
+
+.quote__card {
+  background: honeydew;
+  padding: 3.5em;
+  border-radius: 10px;
+  box-shadow: 4px 10px 16px hsl(0, 0%, 88%);
+}
+
+.quote__text {
+  display: block;
+  max-width: 25em;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.quote__generate {
+  padding: 0.4em 1.1em;
+  border: 1px solid slategrey;
+  margin-top: 2em;
+  border-radius: 4px;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.quote__generate:hover {
+  background-color: slategrey;
+  color: white;
+}
